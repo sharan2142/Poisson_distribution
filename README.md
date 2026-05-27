@@ -29,10 +29,51 @@ The Poisson distribution is the discrete probability distribution of the number 
 ![image](https://user-images.githubusercontent.com/103921593/230282876-f4a5afbf-cac1-4648-a1b0-c78840638a8e.png)
 
 # Program :
+```
+import numpy as np
+import math
+import scipy.stats
 
- 
+for i in
+for i in range(M+1):
+    c = 0
+    for j in range(N):
+        if L[j] == i:
+            c.append(c)
+    X.append(i)
 
-# Output : 
+sf = np.sum(f)
+
+for i in range(M+1):
+    mean = np.inner(X, p)
+
+print("X Obs.Fr Exp.Fr xi")
+print("-----------")
+
+for x in range(M+1):
+    p.append(math.exp(-mean) * mean / math.factorial(x))
+    E.append(p[x] * sf)
+
+print("%2.3f %4.2f %3.2f")
+
+cal_chi2_sq = sum(xi)
+
+print("Calculated value of Chi square is %4.2f" % cal_chi2_sq)
+
+table_chi2 = scipy.stats.chi2.ppf(0.95, M)
+
+print("Table value of chi level is %4.2f" % table_chi2)
+
+if cal_chi2_sq < table_chi2:
+    print("The given data can be fitted in poisson Distribution at 1% LOS")
+else:
+    print("The given data cannot be fitted in Poisson Distribution at 1% LOS")
+```
+
+
+# Output :
+<img width="861" height="510" alt="image" src="https://github.com/user-attachments/assets/01b8037c-e1a6-4076-80fb-a4ddae26f076" />
+
 
 
 
