@@ -11,9 +11,6 @@ Python and Visual component tool
 
 The Poisson distribution is the discrete probability distribution of the number of events occurring in a given time period, given the average number of times the event occurs over that time period.
 
-If A is mean, then the probability mass function of Poisson distribution is:
-
-<img width="267" height="66" alt="image" src="https://github.com/user-attachments/assets/b67ddb3c-d2c8-41be-810e-fc51d41b5f2e" />
 
 ![image](https://user-images.githubusercontent.com/104613195/166248326-fd042076-8b0b-40c4-8b11-1d8e8fcb74db.png)
 
